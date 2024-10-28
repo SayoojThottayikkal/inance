@@ -1,578 +1,742 @@
-*{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    border: 0;
-    outline: none;
-    background: transparent;
-    font-weight: normal;
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: 0;
+  outline: none;
+  background: transparent;
+  font-weight: normal;
 }
 
-ol,ul{
-    list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-header{
-    padding: 10px 10px;
-background: #000;
-
-
-
-
+body {
+  font-family: "fontawesome-webfont";
+  font-size: 17px;
+  color: #1c2c40;
+  overflow-x: hidden;
+  min-width: 320px;
+  font-weight: 400;
 }
-header section.wrapper{
-display: flex;
-justify-content: space-between;
-}
-
-header div.left a{
-color: #fff;
-}
-header div.left a i{
- color:  #c56d16;
- width: 20px;
- height: 20px;
+@font-face {
+  font-family: "fontawesome-webfont";
+  src: url("../inance/fonts/fontawesome-webfont.woff2") format("woff2");
+  src: url("../inance/fonts/fontawesome-webfont.woff") format("woff"),
+    url("../inance/fonts/fontawesome-webfont.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
 }
 
-
-    
-
-header div.right a{
-    color: #fff;
+header {
+  padding: 10px 10px;
+  background: #000;
 }
-header div.right a i{
-    width: 20px;
-    height: 20px;
-    color: #c56d16;;
-}
-header div a:hover{
-    color:  #c56d16;
+header section.wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
-
-#spotlight{
-background:#a6b6eb;
-
+header div.left a {
+  color: #fff;
 }
-#spotlight section.wrapper{
-    background: url(../Inance/images/slider-img.png) no-repeat;
-position: relative;
-background-position: 650px 120px;
-    padding: 20px;
-    
+header div.left a i {
+  color: rgb(255 138 29);
+  width: 20px;
+  height: 20px;
 }
-#spotlight div.top{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 90px;
+
+header div.right a {
+  color: #fff;
+}
+header div.right a i {
+  width: 20px;
+  height: 20px;
+  color: rgb(255 138 29);
+}
+header div a:hover {
+  color: rgb(255 138 29);
+}
+
+#spotlight {
+  background: rgb(209 227 255);
+}
+#spotlight section.wrapper {
+  background: url(images/slider-img.png) no-repeat;
+  position: relative;
+  background-position: 600px 120px;
+  padding: 20px;
+}
+#spotlight div.top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 90px;
 }
 #spotlight div.top div.left a {
-    
 }
-#spotlight div.top div.left a h2{
-    color: #0b0bf5;
-    font-size: 28px;
-    font-weight: 700;
+#spotlight div.top div.left a h2 {
+  color: rgb(3 85 204);
+  font-size: 28px;
+  font-weight: 700;
 }
-#spotlight div.top div.right{
+#spotlight div.top div.right {
+}
+#spotlight div.top div.right ul {
+  display: flex;
+  justify-content: space-between;
+}
+#spotlight div.top div.right ul li {
+  margin-left: 30px;
+}
+#spotlight div.top div.right ul li:last-child {
+  margin-right: 20px;
+}
+#spotlight div.top div.right ul li a:hover {
+  color: rgb(3 85 204);
+}
+#spotlight div.middle {
+  width: 45%;
 
+  padding: 60px;
 }
-#spotlight div.top div.right ul{
-display: flex;
-justify-content: space-between;
-
+#spotlight div.middle h1 {
+  font-size: 48px;
+  font-weight: 700;
+  width: 50%;
+  color: rgb(3 85 204);
 }
-#spotlight div.top div.right ul li{
-    margin-left: 30px;
-   
+#spotlight div.middle p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5em;
+  color: #4f4e4e;
+  margin-bottom: 40px;
 }
-#spotlight div.top div.right ul li:last-child{
-    margin-right: 20px;
-   
+#spotlight div.middle a.button {
+  background: rgb(255 138 29);
+  padding: 10px 35px;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 18px;
 }
-#spotlight div.top div.right ul li a:hover{
-    color: #0b0bf5;
+#spotlight div.bottom {
 }
-#spotlight div.middle{
-width: 45%;
-
-padding: 60px;
+#spotlight div.bottom ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: -120px;
 }
-#spotlight div.middle h1{
-    font-size: 48px;
-    font-weight: 700;
-    width: 50%;
-    color: #0b0bf5;
-
+#spotlight div.bottom ul li {
+  background: #fff;
+  height: 200px;
+  width: 300px;
+  justify-content: center;
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 6px;
+  margin-bottom: 30px;
+  color: #6f6d6d;
 }
-#spotlight div.middle p{
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5em;
-    color: #4f4e4e;
-    margin-bottom: 40px;
+#spotlight div.bottom ul li:nth-child(2) {
+  background: rgb(255 138 29);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.19);
 }
-#spotlight div.middle a.button{
-    background: #f45d06;
-    padding: 10px 35px;
-    border-radius: 6px;
-    color: #fff;
-    font-size: 18px;
-
+#spotlight div.bottom ul li img {
+  width: 100px;
+  display: block;
+  margin-bottom: 20px;
+  color: #6f6d6d;
 }
-#spotlight div.bottom{
-
-}
-#spotlight div.bottom ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    bottom: -120px;
-   
-    
-}   
-#spotlight div.bottom ul li{
-    background: #fff;
-    height: 200px;
-    width: 300px;
-    justify-content: center;
-    margin-right: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.19);
-    border-radius: 6px;
-    margin-bottom: 30px;
-    color: #6f6d6d;
-  
-
-
-}
-#spotlight div.bottom ul li:nth-child(2){
-    background: #f08344;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.19);
-}
-#spotlight div.bottom ul li img{
-    width:100px;
-    display: block;
-    margin-bottom: 20px;
-    color: #6f6d6d;
-    
-}
-#spotlight div.bottom ul li h3{
-    
+#spotlight div.bottom ul li h3 {
 }
 
-#about{
-    
-
+#about {
 }
-#about section.wrapper{
-    padding: 140px 30px 100px 40px;
-    display: flex;
-    justify-content: space-between;
+#about section.wrapper {
+  padding: 140px 30px 100px 40px;
+  display: flex;
+  justify-content: space-between;
 }
-#about div.left{
-    width: 50%;
-    padding: 30px;
-    align-items: center;
-   margin-top: 80px;
-   text-align: left;
+#about div.left {
+  width: 50%;
+  padding: 30px;
+  align-items: center;
+  margin-top: 80px;
+  text-align: left;
 }
-#about div.left h2{
-    text-align: left;
-   font-size: 42px;
-   font-weight: 700;
-   margin-bottom: 20px;
+#about div.left h2 {
+  text-align: left;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
-#about div.left p{
-    line-height: 1.6em;
-    text-align: left;
-    font-size: 16px;
-    font-weight: 400;
-    margin-bottom: 40px;
+#about div.left p {
+  line-height: 1.6em;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 40px;
 }
-#about div.left a.button{
-    background: #5404f6;
-    color: #fff;
-    padding: 12px 34px;
-    margin: 0 auto;
-
+#about div.left a.button {
+  background: rgb(3 85 204);
+  color: #fff;
+  padding: 12px 34px;
+  margin: 0 auto;
 }
-#about div.right{
-    width: 60%;
+#about div.right {
+  width: 60%;
 }
-#about div.right img{
-    width: 100%;
-    display: block;
+#about div.right img {
+  width: 100%;
+  display: block;
 }
 
-
-
-
-
-
-#professional{
-    background:#a6b6eb;
+#professional {
+  background: rgb(209 227 255);
 }
-#professional section.wrapper{
-    padding: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+#professional section.wrapper {
+  padding: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-#professional div.left{
-width: 50%;
+#professional div.left {
+  width: 50%;
 }
-#professional div.left img{
-width: 100%;
-display: block;
+#professional div.left img {
+  width: 100%;
+  display: block;
 }
-#professional div.right{
-width:50%;
+#professional div.right {
+  width: 50%;
 }
-#professional div.right h2{
-    width: 100%;
-font-size: 35px;
-font-weight: 700;
-color: #5404f6;
-margin-bottom: 20px;
+#professional div.right h2 {
+  width: 100%;
+  font-size: 35px;
+  font-weight: 700;
+  color: rgb(3 85 204);
+  margin-bottom: 20px;
 }
-#professional div.right p{
-    line-height: 1.6em;
-    font-size: 16px;
-    margin-bottom: 30px;
-
-   
-
+#professional div.right p {
+  line-height: 1.6em;
+  font-size: 16px;
+  margin-bottom: 30px;
 }
-#professional div.right a.button{
-    background: #f45d06;
-    padding: 12px 33px ;
-    border-radius: 6px ;
-    color: #fff;
-    font-weight: bold;
+#professional div.right a.button {
+  background: rgb(255 138 29);
+  padding: 12px 33px;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: bold;
 }
 
-
-
-#services{
-padding: 80px;
+#services {
+  padding: 80px;
 }
-#services section.wrapper{
-    
+#services section.wrapper {
 }
-#services div.top{
-    text-align: center;
-   margin-bottom: 50px;
-    
+#services div.top {
+  text-align: center;
+  margin-bottom: 50px;
 }
-#services div.top h2{
-    font-size: 30px;
-    font-weight: 700;
-
+#services div.top h2 {
+  font-size: 30px;
+  font-weight: 700;
 }
-#services div.middle{
-    margin-bottom: 40px;
+#services div.middle {
+  margin-bottom: 40px;
 }
-#services div.middle ul{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+#services div.middle ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-#services div.middle ul li{
-    width:30%;
-    box-shadow: 0 4px 8px 4px rgba(0,0,0,0.19);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+#services div.middle ul li {
+  width: 30%;
+  box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.19);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-#services div.middle ul li img{
-    width: 80px;
-    height: 80px;
-    display: block;
-    margin-bottom: 15px;
-    margin-top: 30px;
-  
+#services div.middle ul li img {
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin-bottom: 15px;
+  margin-top: 30px;
 }
-#services div.middle ul li h4{
- font-size: 20px;font-weight: 600;
- margin-bottom: 5px;
+#services div.middle ul li h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
 }
-#services div.middle ul li p{
-    text-align: center;
-   width: 90%;
-   margin-bottom: 15px;
+#services div.middle ul li p {
+  text-align: center;
+  width: 90%;
+  margin-bottom: 15px;
 }
-#services div.bottom{
-text-align: center;
+#services div.bottom {
+  text-align: center;
 }
-#services div.bottom a.button{
-    padding: 15px 35px;
-    background: #0b0bf5;
-    color: #fff;
-    font-weight: bold;
-    display: inline-block;
-    border-radius: 6px;
+#services div.bottom a.button {
+  padding: 15px 35px;
+  background: rgb(3 85 204);
+  color: #fff;
+  font-weight: bold;
+  display: inline-block;
+  border-radius: 6px;
 }
 
-#clients{
-padding: 80px;
+#clients {
+  padding: 80px;
 }
-#clients section.wrapper{
-    
+#clients section.wrapper {
 }
-#clients div.top{
-    text-align: center;
-    margin-bottom: 30px;
+#clients div.top {
+  text-align: center;
+  margin-bottom: 30px;
 }
-#clients div.top h2{
-    font-size: 30px;
-    font-weight: 700;
+#clients div.top h2 {
+  font-size: 30px;
+  font-weight: 700;
 }
-#clients div.middle{
-    
+#clients div.middle {
 }
-#clients div.middle{
-    padding: 30px;
+#clients div.middle {
+  padding: 30px;
 }
-#clients div.middle ul{ 
-    display: flex;
-    justify-content: space-between;
-    
+#clients div.middle ul {
+  display: flex;
+  justify-content: space-between;
 }
 
-#clients div.middle ul li{ 
-    box-shadow: 0 4px 8px 4px rgba(0,0,0,0.19);
-    width: 45%;
-    position: relative;
-    padding: 20px;
+#clients div.middle ul li {
+  box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.19);
+  width: 43%;
+  position: relative;
+  padding: 20px;
 }
-#clients div.middle ul li span.img i{ 
-    color:#000;
-   position: absolute;
-   right:50px;
+#clients div.middle ul li span.img i {
+  color: #000;
+  position: absolute;
+  right: 50px;
 }
-#clients div.middle ul li div.content{
-    display: flex;
-    align-items: center;
-    
+#clients div.middle ul li div.content {
+  display: flex;
+  align-items: center;
 }
-#clients div.middle ul li div.content img{ 
-    border-radius: 50%;
-    height: 70px;
-    width:70px;
-    display: block;
-    margin-right: 20px;
-    margin-bottom: 20px;
+#clients div.middle ul li div.content img {
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  display: block;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
-#clients div.middle ul li div.content span { 
-    width: 80%;
+#clients div.middle ul li div.content span {
+  width: 80%;
 }
-#clients div.middle ul li div span i{ 
-    color: #f45d06;
-   display: inline-block;
-   width: 15px;
+#clients div.middle ul li div span i {
+  color: rgb(255 138 29);
+  display: inline-block;
+  width: 15px;
 }
-#clients div.middle ul li p { 
-    font-size: 16px;
-    font-weight: 400;
-    
+#clients div.middle ul li p {
+  font-size: 16px;
+  font-weight: 400;
 }
-#clients div.bottom { 
-   text-align: center;
-   margin-bottom: 10px;
+#clients div.bottom {
+  text-align: center;
+  margin-bottom: 10px;
 }
-#clients div.bottom a.button1{ 
- color: #fff; 
- background: #0b0bf5; 
- margin-right: 10px;
- padding: 5px;
+#clients div.bottom a.button1 {
+  color: #fff;
+  background: rgb(3 85 204);
+  margin-right: 10px;
+  padding: 5px;
+}
+#clients div.bottom a.button2 {
+  color: #fff;
+  background: rgb(3 85 204);
+  margin-left: 10px;
+  padding: 5px;
+}
+#clients div.bottom a.button1 i {
+  height: 50px;
+  width: 20px;
+  padding: 5px;
+}
+#clients div.bottom a.button2 i {
+  height: 50px;
+  width: 20px;
+  padding: 5px;
+}
 
+#contact {
 }
-#clients div.bottom a.button2{ 
-    color: #fff; 
-    background: #0b0bf5; 
-    margin-left: 10px;
-    padding: 5px;
-   
-   }
-   #clients div.bottom a.button1 i{
-    height: 50px;
-    width: 20px;
-    padding: 5px;
-  
-   }
-   #clients div.bottom a.button2 i{
-    height: 50px;
-    width: 20px;
-   padding: 5px;
-   }
+#contact section.wrapper {
+  padding: 60px;
+}
+#contact div.top {
+  text-align: center;
+}
+#contact div.top h2 {
+  margin-bottom: 80px;
+  font-weight: 700;
+  font-size: 30px;
+}
 
-#contact{
+#contact div.middle {
+  height: 350px;
+
+  display: flex;
+  justify-content: space-between;
 }
-#contact section.wrapper{
-    padding: 60px;
-}
-#contact div.top{
-    text-align: center;
-}
-#contact div.top h2{
-    margin-bottom: 80px;
-    font-weight: 700;
-    font-size: 30px;
-}
- 
-#contact div.middle{ 
-height: 350px;
-   
-    display: flex;
-   justify-content:space-between
-    
-}
-#contact div.middle div.left{ 
-    width: 45%;
+#contact div.middle div.left {
+  width: 45%;
   height: 300px;
-   
 }
-#contact div.middle div.left form{ 
-   display: inline-block;
-    height: 100%;
+#contact div.middle div.left form {
+  display: inline-block;
+  height: 100%;
 }
-#contact div.middle div.left form input{ 
-    width: 100%;
-    background: #fff;
-    border-radius: 6px;
-    box-shadow: 0 4px 8px 4px rgba(0,0,0,0.19);
-    margin-bottom: 20px;
-    height: 40px;
-    padding: 10px;
-    
+#contact div.middle div.left form input {
+  width: 100%;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.19);
+  margin-bottom: 20px;
+  height: 40px;
+  padding: 10px;
 }
-#contact div.middle div.left form input:last-child{ 
-    height: 80px;
+#contact div.middle div.left form input:last-child {
+  height: 80px;
 }
-#contact div.middle div.right{
-    width: 45%;
-  
+#contact div.middle div.right {
+  width: 45%;
 }
-#contact div.middle div.right iframe{
-   display:block;
-   width: 100%;
- height: 100%;
+#contact div.middle div.right iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
-#contact div.bottom{
+#contact div.bottom {
 }
-#contact div.bottom a.button{
-    display: inline-block;
-    color: #fff;
-background: #0b0bf5;
-padding: 12px 40px;
-border-radius: 4px;
+#contact div.bottom a.button {
+  display: inline-block;
+  color: #fff;
+  background: rgb(3 85 204);
+  padding: 12px 40px;
+  border-radius: 4px;
 }
 
-#follow{
-background: #1b024b;
+#follow {
+  background: #1b024b;
 }
-#follow section.wrapper{
-    padding: 80px;
+#follow section.wrapper {
+  padding: 80px;
 }
-#follow div.top{
-    text-align: center;
+#follow div.top {
+  text-align: center;
 }
-#follow div.top h4{
-    color: #fff;
-    font-size: 25px;
-    font-weight: 700;
-    margin-bottom: 80px;
+#follow div.top h4 {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 80px;
 }
-#follow div.top hr{
-    color: #fff;
-    border-bottom: 1px solid #fff;
-    width: 48%;
-    margin: 0 auto;
+#follow div.middle hr {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  width: 48%;
+  margin: 0 auto;
 }
-#follow div.middle{
-   margin-bottom: 100px;
-   position: relative;
+#follow div.middle {
+  margin-bottom: 100px;
+  position: relative;
 }
-#follow div.middle ul{
-    display: flex;
-    align-items: center;
-    justify-content:space-between;
-    width: 60%;
-    margin: 0 auto;
-    position: absolute;
-    top: -35px;
-    right: 250px;
+#follow div.middle ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+  margin: 0 auto;
+  position: absolute;
+  top: -35px;
+  right: 250px;
 }
-#follow div.middle ul li{
-   display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-
-
-    
+#follow div.middle ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-#follow div.middle ul li a{
-   background: #3c14ee;
-   border-radius: 50%;
-   margin-bottom: 10px;
+#follow div.middle ul li a {
+  background: rgb(3 85 204);
+  border-radius: 50%;
+  margin-bottom: 10px;
 }
-#follow div.middle ul li a i{
-   padding: 20px;
+#follow div.middle ul li a i {
+  padding: 20px;
 }
-#follow div.middle ul li span{
-    color: #fff;
+#follow div.middle ul li span {
+  color: #fff;
 }
 
 #follow div.bottom {
-text-align: center;
+  text-align: center;
 }
-#follow div.bottom h4{
-    color: #fff;
-    margin-bottom: 10px;
+#follow div.bottom h4 {
+  color: #fff;
+  margin-bottom: 10px;
 }
-#follow div.bottom a{
-display: flex;
-justify-content: space-between;
-background: #fff;
-display: inline-block;
-padding: 10px 20px;
+#follow div.bottom a {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  display: inline-block;
+  padding: 10px 20px;
 }
-#follow div.bottom a i{
-margin-right: 10px;
+#follow div.bottom a i {
+  margin-right: 10px;
 }
-#follow div.bottom a i:last-child{
-    margin-right: 0;
-    }
+#follow div.bottom a i:last-child {
+  margin-right: 0;
+}
 
-footer{
-    background: #1b024b;
-   
+footer {
+  background: #1b024b;
 }
-footer hr{
-    border-bottom: 1px solid #fff;
+footer hr {
+  border-bottom: 1px solid #fff;
+  width: 80%;
+  margin: 0 auto;
+}
+footer p {
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  padding: 20px;
+}
+
+@media all and (max-width: 1280px) {
+  #spotlight div.middle h1 {
+    width: 80%;
+  }
+
+  #follow div.middle hr {
+    display: none;
+  }
+
+  #follow div.middle ul {
+    margin-bottom: 20px;
+    position: sticky;
+  }
+}
+@media all and (max-width: 980px) {
+  #spotlight section.wrapper {
+    background: none;
+  }
+  #spotlight div.middle {
+    width: 80%;
+    padding: 40px;
+  }
+  #about section.wrapper {
+    flex-wrap: wrap;
+    width: 100%;
+    display: block;
+    padding: 0;
+  }
+  #about div.left {
+    width: 90%;
+    padding: 20;
+    margin-bottom: 40px;
+  }
+  #about div.right {
+    padding: 20px;
+    width: 90%;
+  }
+  #services {
+    padding: 60px;
+  }
+
+  #clients {
+    padding: 0;
+  }
+  #follow section.wrapper {
+    padding: 30px;
+  }
+  #follow div.middle ul li {
+    justify-content: space-between;
+    width: 35%;
+  }
+}
+
+@media all and (max-width: 768px) {
+  #spotlight div.middle {
+    padding: 10px;
+  }
+  #about section.wrapper {
+    padding: 0;
+    margin-bottom: 50px;
+    margin-top: 100px;
+  }
+
+  #about div.left {
+    padding: 5%;
+    margin-bottom: 20px;
+    width: 90%;
+  }
+  #about div.right {
+    padding: 20px;
+    width: 90%;
+  }
+  #about div.right img {
+    display: block;
+    width: 100%;
+  }
+  #professional section.wrapper {
+    padding: 0;
+    display: block;
+    width: 100%;
+  }
+  #professional div.left {
+    display: none;
+  }
+  #professional div.right {
+    padding: 20px;
+    width: 90%;
+  }
+  #clients div.middle {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  #follow div.middle ul {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  #follow div.middle ul li {
     width: 80%;
     margin: 0 auto;
-  
-
+    margin-bottom: 20px;
+  }
+  #services {
+    padding: 50px;
+  }
+  #clients div.middle ul {
+    flex-wrap: wrap;
+  }
+  #clients div.middle ul li {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
 }
-footer p{
-    text-align: center;
-    color: #fff;
-    font-size: 16px;
+
+@media all and (max-width: 640px) {
+  #services {
     padding: 20px;
+  }
+  #services div.middle ul {
+    flex-wrap: wrap;
+  }
+  #services div.middle ul li {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  #contact div.middle {
+    display: block;
+    width: 100%;
+  }
+  #contact section.wrapper {
+    padding: 20px;
+  }
+  #contact div.middle div.right iframe {
+    display: none;
+  }
+  #contact div.middle div.left form {
+    width: 400px;
+  }
+  #contact div.top h2 {
+    margin-bottom: 30px;
+  }
+  #follow section.wrapper {
+    padding: 20px;
+  }
+  #about div.right {
+    padding: 0px;
+    width: 100%;
+  }
 }
 
-@media all and(max-width:980px){
-    #spotlight section.wrapper {
-        background: none;
-    }
+@media all and (max-width: 480px) {
+  header section.wrapper {
+    flex-wrap: wrap;
+  }
+
+  #spotlight div.middle h1 {
+    font-size: 25px;
+    width: 100%;
+  }
+  #spotlight div.top {
+    margin-bottom: 20px;
+  }
+  #spotlight div.middle {
+    width: 100%;
+  }
+  #spotlight div.top div.right {
+    display: none;
+  }
+  #spotlight div.top div.left {
+    margin: 0 auto;
+  }
+  #spotlight div.top div.right ul {
+    display: block;
+  }
+  #spotlight div.bottom ul {
+    display: none;
+  }
+  #spotlight div.top div.left a h2 {
+    margin: 0 auto;
+  }
+  #about div.left {
+    margin-top: 10px;
+  }
+  #about div.left h2 {
+    font-size: 25px;
+  }
+  #professional div.right {
+    padding: 10px;
+  }
+  #contact div.middle div.left form {
+    width: 280px;
+  }
+  #services div.middle ul li {
+    width: 100%;
+  }
+  #professional div.right {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #professional div.right a.button {
+    margin-bottom: 60px;
+  }
+  #professional div.right h2 {
+    font-size: 24px;
+  }
+  #clients div.top h2 {
+    font-size: 20px;
+  }
+  #contact div.top h2 {
+    font-size: 25px;
+  }
 }
-
-
-
-   
