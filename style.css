@@ -12,20 +12,50 @@ ol,
 ul {
   list-style: none;
 }
+
 body {
-  font-family: "fontawesome-webfont";
+  font-family: "open_sansregular", Arial, Helvetica, sans-serif;
   font-size: 17px;
   color: #1c2c40;
   overflow-x: hidden;
   min-width: 320px;
   font-weight: 400;
 }
-@font-face {
-  font-family: "fontawesome-webfont";
-  src: url("../inance/fonts/fontawesome-webfont.woff2") format("woff2");
-  src: url("../inance/fonts/fontawesome-webfont.woff") format("woff"),
-    url("../inance/fonts/fontawesome-webfont.ttf") format("truetype");
+
+.hidden {
+  display: none;
+}
+br.clear {
+  clear: both;
+  line-height: 0;
+}
+p {
+  line-height: 1.3em;
+  font-size: 16px;
+  font-family: "open_sansregulart", Arial;
   font-weight: 400;
+}
+@font-face {
+  font-family: "open_sanslight";
+  src: url("../inance/fonts/opensans-light-webfont.woff2") format("woff2"),
+    url("../inance/fonts/opensans-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "open_sansregular";
+  src: url("../inance/fonts/opensans-regular-webfont.woff2") format("woff2"),
+    url("../inance/fonts/opensans-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "open_sanssemibold";
+  src: url("../inance/fonts/opensans-semibold-webfont.woff2") format("woff2"),
+    url("../inance/fonts/opensans-semibold-webfont.woff") format("woff");
+  font-weight: normal;
   font-style: normal;
 }
 
@@ -89,6 +119,9 @@ header div a:hover {
 #spotlight div.top div.right ul li {
   margin-left: 30px;
 }
+#spotlight div.top div.right ul li a {
+  color: #000;
+}
 #spotlight div.top div.right ul li:last-child {
   margin-right: 20px;
 }
@@ -139,7 +172,7 @@ header div a:hover {
   flex-direction: column;
   align-items: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 6px;
+
   margin-bottom: 30px;
   color: #6f6d6d;
 }
@@ -219,7 +252,7 @@ header div a:hover {
 #professional div.right h2 {
   width: 100%;
   font-size: 35px;
-  font-weight: 700;
+  font-weight: bolder;
   color: rgb(3 85 204);
   margin-bottom: 20px;
 }
@@ -231,7 +264,7 @@ header div a:hover {
 #professional div.right a.button {
   background: rgb(255 138 29);
   padding: 12px 33px;
-  border-radius: 6px;
+
   color: #fff;
   font-weight: bold;
 }
@@ -247,7 +280,7 @@ header div a:hover {
 }
 #services div.top h2 {
   font-size: 30px;
-  font-weight: 700;
+  font-weight: bolder;
 }
 #services div.middle {
   margin-bottom: 40px;
@@ -258,7 +291,7 @@ header div a:hover {
   align-items: center;
 }
 #services div.middle ul li {
-  width: 30%;
+  width: 33%;
   box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.19);
   display: flex;
   flex-direction: column;
@@ -291,7 +324,6 @@ header div a:hover {
   color: #fff;
   font-weight: bold;
   display: inline-block;
-  border-radius: 6px;
 }
 
 #clients {
@@ -327,6 +359,7 @@ header div a:hover {
   color: #000;
   position: absolute;
   right: 50px;
+  top: 50px;
 }
 #clients div.middle ul li div.content {
   display: flex;
@@ -334,19 +367,25 @@ header div a:hover {
 }
 #clients div.middle ul li div.content img {
   border-radius: 50%;
-  height: 70px;
-  width: 70px;
+  height: 100px;
+  width: 100px;
   display: block;
   margin-right: 20px;
   margin-bottom: 20px;
 }
 #clients div.middle ul li div.content span {
-  width: 80%;
+  width: 100%;
+  margin: 0 auto;
 }
 #clients div.middle ul li div span i {
-  color: rgb(255 138 29);
+  color: rgb(251 175 93);
   display: inline-block;
   width: 15px;
+  height: 5px;
+}
+#clients div.middle ul li div span h6 {
+  font-size: 20px;
+  font-weight: 700;
 }
 #clients div.middle ul li p {
   font-size: 16px;
@@ -395,6 +434,7 @@ header div a:hover {
 
 #contact div.middle {
   height: 350px;
+  margin-bottom: 100px;
 
   display: flex;
   justify-content: space-between;
@@ -416,8 +456,15 @@ header div a:hover {
   height: 40px;
   padding: 10px;
 }
-#contact div.middle div.left form input:last-child {
+#contact div.middle div.left form textarea {
   height: 80px;
+  width: 100%;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.19);
+  margin-bottom: 20px;
+
+  padding: 10px;
 }
 #contact div.middle div.right {
   width: 45%;
@@ -427,14 +474,11 @@ header div a:hover {
   width: 100%;
   height: 100%;
 }
-#contact div.bottom {
-}
-#contact div.bottom a.button {
+#contact div.middle div.bottom a.button {
   display: inline-block;
   color: #fff;
   background: rgb(3 85 204);
   padding: 12px 40px;
-  border-radius: 4px;
 }
 
 #follow {
@@ -478,15 +522,18 @@ header div a:hover {
   align-items: center;
   justify-content: center;
 }
-#follow div.middle ul li a {
+#follow div.middle ul li a.icon {
   background: rgb(3 85 204);
   border-radius: 50%;
   margin-bottom: 10px;
 }
+#follow div.middle ul li a.icon i {
+  color: #fff;
+}
 #follow div.middle ul li a i {
   padding: 20px;
 }
-#follow div.middle ul li span {
+#follow div.middle ul li span a {
   color: #fff;
 }
 
@@ -563,6 +610,14 @@ footer p {
     padding: 20px;
     width: 90%;
   }
+  #services div.middle ul {
+    flex-wrap: wrap;
+  }
+  #services div.middle ul li {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
   #services {
     padding: 60px;
   }
@@ -580,6 +635,9 @@ footer p {
 }
 
 @media all and (max-width: 768px) {
+  #spotlight div.top {
+    margin-bottom: 20px;
+  }
   #spotlight div.middle {
     padding: 10px;
   }
@@ -595,8 +653,7 @@ footer p {
     width: 90%;
   }
   #about div.right {
-    padding: 20px;
-    width: 90%;
+    display: none;
   }
   #about div.right img {
     display: block;
@@ -645,14 +702,7 @@ footer p {
   #services {
     padding: 20px;
   }
-  #services div.middle ul {
-    flex-wrap: wrap;
-  }
-  #services div.middle ul li {
-    width: 80%;
-    margin: 0 auto;
-    margin-bottom: 20px;
-  }
+
   #contact div.middle {
     display: block;
     width: 100%;
@@ -692,6 +742,7 @@ footer p {
   }
   #spotlight div.middle {
     width: 100%;
+    margin-bottom: -80px;
   }
   #spotlight div.top div.right {
     display: none;
@@ -703,7 +754,7 @@ footer p {
     display: block;
   }
   #spotlight div.bottom ul {
-    display: none;
+    flex-wrap: wrap;
   }
   #spotlight div.top div.left a h2 {
     margin: 0 auto;
